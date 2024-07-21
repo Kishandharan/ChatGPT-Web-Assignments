@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Top menu with custom dropdowns in html and css</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		.topmenu{
+			display: flex;
+			gap: 40px;
+			font-family: monospace;
+			font-size: xx-large;
+			background-color: #020463;
+			padding: 20px;
+			color: white;
+			height: 30px;
+		}
+
+		.topmenu .items{
+			display: none;
+			color: white;
+			background-color: #020463;
+			padding: 20px;
+			width: 300px;
+		}
+
+	    .dropdown:hover .items{
+			display: block;
+		}
+
+		.items p{
+			display: block;
+			height: 50px;
+			padding-top: 10%;
+			font-size: 25px;
+			margin: 0;
+		}
+
+		.items p:hover{
+			background-color: #0307ad;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="topmenu">
+		<span>Home</span>
+		<span>Contact</span>
+		<span>Info</span>
+		<span class="dropdown">
+			Services
+			<div class="items">
+				<p>Echo Location</p>
+				<p>TransData Baseline</p>
+				<p>TecPairing Server</p>
+			</div>
+		</span>
+	</div>
+</body>
+</html>
